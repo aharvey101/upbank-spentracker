@@ -21,6 +21,15 @@ app.use(function (err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
+  // if in production
+  if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'))
+
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
+    })
+  }
+
   // render the error page
   res.status(err.status || 500);
   res.render('error');
