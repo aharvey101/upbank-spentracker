@@ -52,20 +52,14 @@ function Dashboard({ data }) {
     return categoriesState
   }
 
-  function getPlaces() {
 
-  }
-  console.log(data)
-  // const places = data.map(data => {
-  // })
 
 
   return (
     <div className=" ml-10 mr-10 mx-auto m-10 rounded shadow-lg bg-black500  ">
 
       <Doughnut data={getCategories()}></Doughnut>
-      {/* <Doughnut ></Doughnut> */}
-      {/* <Doughnut ></Doughnut> */}
+
 
     </div >
   )
