@@ -9,6 +9,7 @@
     "autoprefixer": "^9.8.6",
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
+    "postcss": "^7.0.32",
     "postcss-cli": "^7.1.1",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.10.0",
