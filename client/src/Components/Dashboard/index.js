@@ -56,7 +56,7 @@ function Dashboard({ data }) {
 
 
   return (
-    <div className=" ml-10 mr-10 mx-auto m-10 rounded shadow-lg bg-black500  ">
+    <div className=" ml-10 mr-10 mx-auto m-10 rounded shadow-lg bg-blue-100  ">
 
       <Doughnut data={getCategories()}></Doughnut>
 

@@ -10,6 +10,7 @@ function Graph(props) {
     <div>
       <Doughnut
         data={props.data}
+        defaultFontColor="black"
         options={{
           title: {
             display: true,
@@ -19,7 +20,10 @@ function Graph(props) {
           legend: {
             color: '#000000',
             display: true,
-            position: 'right'
+            position: 'right',
+            labels: {
+              fontColor: '#000000'
+            }
           },
           responsive: true
         }}
